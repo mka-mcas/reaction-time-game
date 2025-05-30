@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MCAS Reaction Time Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <img src="MCAS_no_bg_2.png" alt="MCAS Logo" id="logo">
+      <h1>MCAS Reaction Time Test</h1>
+    </header>
+
+    <div id="instructions">
+      <h2>How to Play</h2>
+      <ol>
+        <li>Click the <strong>Start</strong> button to begin.</li>
+        <li>Wait until the box turns <strong>green</strong>.</li>
+        <li>Click as fast as you can when it turns green.</li>
+        <li>You will get 3 attempts. Your results will appear on the right.</li>
+      </ol>
+      <button id="startBtn">Start</button>
+    </div>
+
+    <div id="main">
+      <div id="game" class="waiting">
+        <p id="message">Click "Start" to begin</p>
+      </div>
+
+      <div id="results-table">
+        <h3>Reaction Times</h3>
+        <table>
+          <thead>
+            <tr><th>Attempt</th><th>Time (ms)</th></tr>
+          </thead>
+          <tbody id="results-body">
+            <tr><td>1</td><td>-</td></tr>
+            <tr><td>2</td><td>-</td></tr>
+            <tr><td>3</td><td>-</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="summary"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
