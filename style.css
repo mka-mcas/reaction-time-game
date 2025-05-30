@@ -106,3 +106,15 @@ header {
   color: #333;
   margin-top: 10px;
 }
+
+#play-count,
+#fastest-time {
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#fastest-time {
+  color: darkgreen;
+}
